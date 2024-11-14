@@ -1,4 +1,5 @@
-# Team Pixel Nostalgia Deployment and Configuration Wizard
+#       Team Pixel Nostalgia
+# Deployment and Configuration Wizard
 
                              ___
                            ,"---".
