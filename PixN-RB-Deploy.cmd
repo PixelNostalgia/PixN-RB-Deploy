@@ -15,10 +15,34 @@ ECHO Wscript.Sleep 900                                    >>"%TempVBSFile%"
 
 CSCRIPT //nologo "%TempVBSFile%"
 
-echo .
-echo Welcome to the Team Pixel Nostalgia Configuration Wizard...
+SETLOCAL ENABLEEXTENSIONS
+SETLOCAL ENABLEDELAYEDEXPANSION
+echo                             ___
+echo                           ,"---".
+echo                           :     ;
+echo                            `-.-'
+echo                             ^| ^|
+echo                             ^| ^|
+echo                             ^| ^|
+echo                          _.-\_/-._
+echo                       _ / ^|     ^| \ _
+echo                      / /   `---'   \ \
+echo                     /  `-----------'  \
+echo                    /,-""-.       ,-""-.\
+echo                   ( i-..-i       i-..-i )
+echo                   ^|`^|    ^|-------^|    ^|'^|
+echo                   \ `-..-'  ,=.  `-..-'/
+echo                    `--------^|=^|-------'
+echo                             ^| ^|
+echo                             \ \
+echo                              ) )
+echo                             / /
+echo                            ( (
+echo ..............................................................
+echo ...Welcome to the Team Pixel Nostalgia Configuration Wizard...
+echo ..............................................................
 ping -n 2 127.0.0.1 > nul
-echo .
+
 REM Downloading the package...
 echo Downloading Team Pixel Nostalgia Configuration...
 echo .
@@ -65,8 +89,13 @@ REM Calling the PixN Update Service...
 echo Running the PixN Update Service...
 cd ..\..\..\emulators\pixn\
 START /WAIT cmd /c "PixN-RB-Update-Service.cmd"
-echo .
 
-echo ALL DONE!!!
+cls
+echo .............................................................
+echo .........................All done!...........................
+echo .............................................................
+echo ......Enjoy and join us on Discord for help and support......
+echo .............................................................
+echo .
 pause
 exit
