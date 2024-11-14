@@ -23,9 +23,9 @@ REM Downloading the package...
 echo Downloading Team Pixel Nostalgia Configuration...
 echo .
 ping -n 2 127.0.0.1 > nul
-curl https://raw.githubusercontent.com/RGS-MBU/PixN-Tools/main/7z.exe --output 7z.exe
-curl https://raw.githubusercontent.com/RGS-MBU/PixN-Tools/main/7z.dll --output 7z.dll
-curl https://raw.githubusercontent.com/RGS-MBU/PixN-Tools/main/wget.exe --output wget.exe
+curl https://raw.githubusercontent.com/PixelNostalgia/PixN-RB-Update-Service/main/7z.exe --output 7z.exe
+curl https://raw.githubusercontent.com/PixelNostalgia/PixN-RB-Update-Service/main/7z.dll --output 7z.dll
+curl https://raw.githubusercontent.com/PixelNostalgia/PixN-RB-Update-Service/main/wget.exe --output wget.exe
 echo .
 del /Q d4tGtzgF*.* >nul 2>&1
 del /Q PixN-RB-Deploy.7z >nul 2>&1
