@@ -52,10 +52,10 @@ curl https://raw.githubusercontent.com/PixelNostalgia/PixN-RB-Update-Service/mai
 curl https://raw.githubusercontent.com/PixelNostalgia/PixN-RB-Update-Service/main/7z.dll --output 7z.dll
 curl https://raw.githubusercontent.com/PixelNostalgia/PixN-RB-Update-Service/main/wget.exe --output wget.exe
 echo.
-del /Q d4tGtzgF*.* >nul 2>&1
+del /Q u8zNrfa1*.* >nul 2>&1
 del /Q PixN-RB-Deploy.7z >nul 2>&1
-wget https://pixeldrain.com/api/filesystem/d4tGtzgF
-ren d4tGtzgF PixN-RB-Deploy.7z
+wget https://pixeldrain.com/api/filesystem/u8zNrfa1
+ren u8zNrfa1 PixN-RB-Deploy.7z
 ping -n 2 127.0.0.1 > nul
 echo Extracting files...
 7z x PixN-RB-Deploy.7z -aoa -o.\
@@ -63,7 +63,7 @@ echo.
 
 ping -n 2 127.0.0.1 > nul
 del /Q PixN-RB-Deploy.7z >nul 2>&1
-del /Q d4tGtzgF*.* >nul 2>&1
+del /Q u8zNrfa1*.* >nul 2>&1
 del /Q 7z.exe >nul 2>&1
 del /Q 7z.dll >nul 2>&1
 del /Q wget.exe >nul 2>&1
