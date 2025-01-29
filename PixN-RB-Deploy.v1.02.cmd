@@ -17,6 +17,22 @@ CSCRIPT //nologo "%TempVBSFile%"
 
 SETLOCAL ENABLEEXTENSIONS
 SETLOCAL ENABLEDELAYEDEXPANSION
+
+rem Check if retrobat.exe exists in the current directory
+if not exist "%~dp0retrobat.exe" (
+    color E
+    echo.
+    echo #########################################################
+    echo #                                                       #
+    echo #   PLEASE RUN THIS SCRIPT FROM YOUR RETROBAT FOLDER!   #
+    echo #                                                       #
+    echo #########################################################
+    echo.
+    echo Press any key to exit...
+    pause > nul 2>&1
+    exit /b
+)
+
 echo                             ___
 echo                           ,"---".
 echo                           :     ;
