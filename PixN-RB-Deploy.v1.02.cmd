@@ -24,7 +24,7 @@ if not exist "%~dp0retrobat.exe" (
     echo.
     echo #########################################################
     echo #                                                       #
-    echo #   PLEASE RUN THIS SCRIPT FROM YOUR RETROBAT FOLDER!   #
+    echo #   PLEASE RUN THIS SCRIPT FROM YOUR RETROBAT FOLDER!    #
     echo #                                                       #
     echo #########################################################
     echo.
