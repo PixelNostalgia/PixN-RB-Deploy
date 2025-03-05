@@ -156,7 +156,7 @@ echo.
 echo You selected NO, deleting file...
 echo.
 del /Q ..\..\PixN-RB-v6.4-Deploy.7z >nul 2>&1
-ping -n 2 127.0.0.1 > nul
+ping -n 3 127.0.0.1 > nul
 
 :END
 echo Press any key to exit...
