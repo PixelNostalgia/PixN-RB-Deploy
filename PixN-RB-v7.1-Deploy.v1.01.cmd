@@ -72,7 +72,7 @@ echo.
 
 for %%A in ("PixN-RB-v7.1-Deploy.7z") do (
     echo %%~zA
-    if [%%~zA]==[19701727471] (
+    if [%%~zA]==[19848530216] (
         echo Package already exists...
 		goto FILE-EXISTS
     ) else (
