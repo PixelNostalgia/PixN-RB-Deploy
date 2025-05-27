@@ -1,4 +1,5 @@
 @echo off
+pushd %1
 setlocal
 
 rem Text color code for Light Green is A
@@ -161,5 +162,8 @@ ping -n 3 127.0.0.1 > nul
 
 :END
 echo Press any key to exit...
+popd
 pause > nul 2>&1
+popd
+
 exit
