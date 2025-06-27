@@ -149,7 +149,7 @@ if %errorlevel%==2 goto no
 echo.
 echo You selected YES, the package will be kept for future use...
 echo.
-goto :END
+goto END
 
 :no
 echo.
