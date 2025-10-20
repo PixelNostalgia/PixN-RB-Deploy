@@ -66,6 +66,10 @@ echo.
 echo Downloading Team Pixel Nostalgia Configuration...
 echo.
 ping -n 2 127.0.0.1 > nul
+del /Q 7z.exe >nul 2>&1
+del /Q 7z.dll >nul 2>&1
+del /Q wget.exe >nul 2>&1
+del /Q .wget-hsts >nul 2>&1
 curl https://raw.githubusercontent.com/PixelNostalgia/PixN-RB-Update-Service/main/7z.exe --output 7z.exe
 curl https://raw.githubusercontent.com/PixelNostalgia/PixN-RB-Update-Service/main/7z.dll --output 7z.dll
 curl https://raw.githubusercontent.com/PixelNostalgia/PixN-RB-Update-Service/main/wget.exe --output wget.exe
@@ -103,6 +107,24 @@ if %ERRORLEVEL% neq 0 (
 	echo Download Completed Successfully...
 )
 ping -n 2 127.0.0.1 > nul
+echo.
+
+REM Checking file...
+for %%A in ("PixN-RB-v7.4.0.2-Deploy.7z") do (
+    echo %%~zA
+    if [%%~zA]==[23617446169] (
+        echo Package verification successful...
+		goto FILE-EXISTS
+    ) else (
+        echo.
+		echo Package verification Failed! - Restarting the script in 10 seconds...
+		echo Use CTRL-C now if you wish to cancel the script...
+		ping -n 10 127.0.0.1 > nul
+		cls
+		goto START
+    )
+)
+
 :FILE-EXISTS
 ping -n 1 127.0.0.1 > nul
 echo.
