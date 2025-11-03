@@ -12,7 +12,7 @@ Steps:
 1. Download RetroBat from their official website: https://www.retrobat.org/
 
 2. Download the version of the deploy script that matches your version of RetroBat
-   (For RetroBat v7.4.0.2 grab PixN-RB-v7.4.0.2-Deploy.v1.xx.cmd)
+   (For RetroBat v7.5.0.0 grab PixN-RB-v7.5.0.0-Deploy.v1.xx.cmd)
 
 3. Exclude the RetroBat folder from your Anti-Virus software (Windows Defender etc)
 
@@ -32,11 +32,11 @@ Steps:
 10. Enjoy!
 
 
-If running RetroBat v7.2.0   use: PixN-RB-v7.2-Deploy.v1.xx.cmd
-
 If running RetroBat v7.3.0   use: PixN-RB-v7.3-Deploy.v1.xx.cmd
 
 If running RetroBat v7.4.0.2 use: PixN-RB-v7.4.0.2-Deploy.v1.xx.cmd
+
+If running RetroBat v7.5.0.0 use: PixN-RB-v7.5.0.0-Deploy.v1.xx.cmd
 
                              ___
                            ,"---".

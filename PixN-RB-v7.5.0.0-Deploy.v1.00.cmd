@@ -66,31 +66,31 @@ echo.
 echo Downloading Team Pixel Nostalgia Configuration...
 echo.
 ping -n 2 127.0.0.1 > nul
-curl https://raw.githubusercontent.com/PixelNostalgia/PixN-RB-Update-Service/main/7z.exe --ssl-revoke-best-effort --output 7z.exe
-curl https://raw.githubusercontent.com/PixelNostalgia/PixN-RB-Update-Service/main/7z.dll --ssl-revoke-best-effort --output 7z.dll
-curl https://raw.githubusercontent.com/PixelNostalgia/PixN-RB-Update-Service/main/wget.exe --ssl-revoke-best-effort --output wget.exe
+curl https://raw.githubusercontent.com/PixelNostalgia/PixN-RB-Update-Service/main/7z.exe --output 7z.exe
+curl https://raw.githubusercontent.com/PixelNostalgia/PixN-RB-Update-Service/main/7z.dll --output 7z.dll
+curl https://raw.githubusercontent.com/PixelNostalgia/PixN-RB-Update-Service/main/wget.exe --output wget.exe
 echo.
 
-for %%A in ("PixN-RB-v7.2-Deploy.7z") do (
+for %%A in ("PixN-RB-v7.5.0.0-Deploy.7z") do (
     echo %%~zA
-    if [%%~zA]==[21329330097] (
+    if [%%~zA]==[23617446169] (
         echo Package already exists...
 		goto FILE-EXISTS
     ) else (
         echo Starting package download...
-		del /Q PixN-RB-v7.2-Deploy.7z >nul 2>&1
-		del /Q PixN-RB-v7.2-Deploy.7z.1 >nul 2>&1
-		del /Q PixN-RB-v7.2-Deploy.7z.2 >nul 2>&1
-		del /Q PixN-RB-v7.2-Deploy.7z.3 >nul 2>&1
-		del /Q PixN-RB-v7.2-Deploy.7z.4 >nul 2>&1
-		del /Q PixN-RB-v7.2-Deploy.7z.5 >nul 2>&1
-		del /Q PixN-RB-v7.2-Deploy.7z.6 >nul 2>&1
-		del /Q PixN-RB-v7.2-Deploy.7z.7 >nul 2>&1
-		del /Q PixN-RB-v7.2-Deploy.7z.8 >nul 2>&1
-		del /Q PixN-RB-v7.2-Deploy.7z.9 >nul 2>&1
+		del /Q PixN-RB-v7.5.0.0-Deploy.7z >nul 2>&1
+		del /Q PixN-RB-v7.5.0.0-Deploy.7z.1 >nul 2>&1
+		del /Q PixN-RB-v7.5.0.0-Deploy.7z.2 >nul 2>&1
+		del /Q PixN-RB-v7.5.0.0-Deploy.7z.3 >nul 2>&1
+		del /Q PixN-RB-v7.5.0.0-Deploy.7z.4 >nul 2>&1
+		del /Q PixN-RB-v7.5.0.0-Deploy.7z.5 >nul 2>&1
+		del /Q PixN-RB-v7.5.0.0-Deploy.7z.6 >nul 2>&1
+		del /Q PixN-RB-v7.5.0.0-Deploy.7z.7 >nul 2>&1
+		del /Q PixN-RB-v7.5.0.0-Deploy.7z.8 >nul 2>&1
+		del /Q PixN-RB-v7.5.0.0-Deploy.7z.9 >nul 2>&1
     )
 )
-wget --progress=bar:binary --no-check-certificate --no-cache --no-cookies http://rgsretro1986.ds78102.seedhost.eu/update/RetroBat/PixN-RB-v7.2-Deploy.7z
+wget --progress=bar:binary --no-check-certificate --no-cache --no-cookies http://rgsretro1986.ds78102.seedhost.eu/update/RetroBat/PixN-RB-v7.5.0.0-Deploy.7z
 if %ERRORLEVEL% neq 0 (
     echo.
 	echo Download Failed! - Trying again in 10 seconds...
@@ -107,7 +107,7 @@ ping -n 2 127.0.0.1 > nul
 ping -n 1 127.0.0.1 > nul
 echo.
 echo Extracting files...
-7z x PixN-RB-v7.2-Deploy.7z -aoa -o.\
+7z x PixN-RB-v7.5.0.0-Deploy.7z -aoa -o.\
 echo.
 
 ping -n 2 127.0.0.1 > nul
@@ -126,13 +126,13 @@ START /WAIT cmd /c "PixN-RB-Update-Service.cmd"
 
 cls
 echo .............................................................
-echo .........................All done!............................
+echo .........................All done!...........................
 echo .............................................................
 echo ......Enjoy and join us on Discord for help and support......
 echo .............................................................
 echo .............................................................
 echo .............................................................
-echo .......Would you like to keep the ~20GB package file?........
+echo .......Would you like to keep the ~25GB package file?........
 echo .............................................................
 echo .......Press 'Y' to keep the file or 'N' to delete it........
 echo .............................................................
@@ -157,7 +157,7 @@ goto END
 echo.
 echo You selected NO, deleting file...
 echo.
-del /Q ..\..\PixN-RB-v7.2-Deploy.7z >nul 2>&1
+del /Q ..\..\PixN-RB-v7.5.0.0-Deploy.7z >nul 2>&1
 ping -n 3 127.0.0.1 > nul
 
 :END
