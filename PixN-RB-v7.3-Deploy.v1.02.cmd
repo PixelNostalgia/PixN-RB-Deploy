@@ -66,9 +66,9 @@ echo.
 echo Downloading Team Pixel Nostalgia Configuration...
 echo.
 ping -n 2 127.0.0.1 > nul
-curl http://rgsretro1986.ds78102.seedhost.eu/update/RetroBat/7z.exe --output 7z.exe
-curl http://rgsretro1986.ds78102.seedhost.eu/update/RetroBat/7z.dll --output 7z.dll
-curl http://rgsretro1986.ds78102.seedhost.eu/update/RetroBat/wget.exe --output wget.exe
+curl http://rgsretro1986.ds78102.seedhost.eu/update/RetroBat/7z.exe --ssl-revoke-best-effort --output 7z.exe
+curl http://rgsretro1986.ds78102.seedhost.eu/update/RetroBat/7z.dll --ssl-revoke-best-effort --output 7z.dll
+curl http://rgsretro1986.ds78102.seedhost.eu/update/RetroBat/wget.exe --ssl-revoke-best-effort --output wget.exe
 echo.
 
 for %%A in ("PixN-RB-v7.3-Deploy.7z") do (
