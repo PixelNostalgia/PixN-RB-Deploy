@@ -7,6 +7,16 @@ able to install our build on pretty much any size storage and no longer
 need to download a large base image. Once you have the barebones build
 installed, you can then browse our ROMpacks and download the ones you want.
 
+Note:
+The script is designed to only be used with these specific versions of RetroBat:
+
+v7.3.0
+v7.4.0.2
+v7.5.0.0
+
+The RetroBat website only provides the latest version available. If you need one of the versions above, take a look here:
+https://retrosrv.ddns.net:3670/share/4idj-t93
+
 Steps:
 
 1. Download RetroBat from their official website: https://www.retrobat.org/
