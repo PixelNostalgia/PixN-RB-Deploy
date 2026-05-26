@@ -10,7 +10,7 @@ installed, you can then browse our ROMpacks and download the ones you want.
 Note:
 The script is designed to only be used with these specific versions of RetroBat:
 
-v7.5.0.0    -    v8.0.0.0
+v7.5.0.0    -    v8.1.2
 
 The RetroBat website only provides the latest version available. If you need one of the versions above, take a look here:
 https://retrosrv.ddns.net:3670/share/4idj-t93
@@ -19,12 +19,12 @@ or
 
 https://github.com/RetroBat-Official/retrobat/releases/tag/7.5
 
-https://github.com/RetroBat-Official/retrobat/releases/tag/8.0
+https://github.com/RetroBat-Official/retrobat/releases/tag/8.1.2
 
 Steps:
 
 1. Download the version of the deploy script that matches your version of RetroBat
-   (For RetroBat v8.0.0.0 grab PixN-RB-v8.0.0.0-Deploy.v1.xx.cmd)
+   (For RetroBat v8.1.2 grab PixN-RB-v8.1.2-Deploy.v1.xx.cmd)
 
 2. Exclude the RetroBat folder from your Anti-Virus software (Windows Defender etc)
 
@@ -46,7 +46,7 @@ Steps:
 
 If running RetroBat v7.5.0.0 use: PixN-RB-v7.5.0.0-Deploy.v1.xx.cmd
 
-If running RetroBat v8.0.0.0 use: PixN-RB-v8.0.0.0-Deploy.v1.xx.cmd
+If running RetroBat v8.1.2 use: PixN-RB-v8.1.2-Deploy.v1.xx.cmd
 
                              ___
                            ,"---".
